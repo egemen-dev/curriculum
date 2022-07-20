@@ -73,7 +73,7 @@ Note that the frames have an ID. The ID is how Turbo is able to identify a frame
 With the Turbo Frame helper, you can substitute the ID for a variable. For instance:
 
 ~~~erb
-<% @articles.each do |article| %>
+<% @articles.each do |article| do %>
   <%= turbo_frame_tag article %>
     <%= article.title %>
   <% end %>
